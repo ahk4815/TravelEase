@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelEase - Discover India</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">TravelEase</div>
+    <nav>
+      <a href="#">Flights</a>
+      <a href="#">Packages</a>
+      <a href="#">Activities</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search"/>
+      <button class="btn">Search</button>
+    </div>
+    <div>
+      <button class="btn">Sign up</button>
+      <button class="btn btn-light">Login</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Discover India</h1>
+      <p>Explore the diverse landscapes and rich culture of India with TravelEase.</p>
+      <input type="text" placeholder="Search destinations..." />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Top Trending Destinations</h2>
+    <div class="trending">
+      <div class="card">
+        <img src="https://source.unsplash.com/kerala" alt="Kerala"/>
+        <div class="card-content">
+          <strong>Kerala</strong>
+          <p>Explore the backwaters and beaches</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/rajasthan" alt="Rajasthan"/>
+        <div class="card-content">
+          <strong>Rajasthan</strong>
+          <p>Experience the royal heritage</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/goa" alt="Goa"/>
+        <div class="card-content">
+          <strong>Goa</strong>
+          <p>Relax on the sandy beaches</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/himachal" alt="Himachal"/>
+        <div class="card-content">
+          <strong>Himachal Pradesh</strong>
+          <p>Discover the Himalayan beauty</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/uttarakhand" alt="Uttarakhand"/>
+        <div class="card-content">
+          <strong>Uttarakhand</strong>
+          <p>Find peace in the hills</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/tamilnadu" alt="Tamil Nadu"/>
+        <div class="card-content">
+          <strong>Tamil Nadu</strong>
+          <p>Visit ancient temples and beaches</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Explore by State</h2>
+    <div class="dropdown">
+      <select id="stateDropdown">
+        <option value="">Select a state</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Goa">Goa</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+      </select>
+    </div>
+    <div class="no-itinerary" id="itineraryBox">
+      <img src="https://i.imgur.com/qIufhof.png" alt="No Itinerary" />
+      <h3>No Itineraries Found</h3>
+      <p>Select a state to view itineraries from our travel partners.</p>
+      <button class="btn">Browse Destinations</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TravelEase. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
