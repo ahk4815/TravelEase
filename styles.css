@@ -54,7 +54,7 @@ nav a {
   color: #000;
 }
 .hero {
-  background: url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144') center/cover no-repeat;
+  background: url('./Pictures/HomePic.jpg') center/cover no-repeat;
   height: 250px;
   display: flex;
   align-items: center;
@@ -129,4 +129,13 @@ footer {
   .trending {
     flex-direction: column;
   }
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.card-link:hover .card {
+  transform: scale(1.02);
+  transition: transform 0.2s;
 }
