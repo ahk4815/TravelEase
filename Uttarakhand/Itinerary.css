@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url('https://i.pravatar.cc/32') center/cover no-repeat;
+}
+
+.hero img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: #1e90ff;
+  margin-bottom: 1.2rem;
+}
+
+.breadcrumbs a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1e90ff;
+  color: white;
+}
+
+.itinerary h2,
+.partner h2,
+.price h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.itinerary .day {
+  margin-bottom: 1.5rem;
+}
+
+.itinerary .day h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.partner p,
+.price p {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+.partner a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .hero img {
+    height: 150px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
